@@ -1,6 +1,6 @@
 {
   "name": "@wide/emitter",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Offer a simple yet useful way of communication between components",
   "license": "MIT",
   "author": "Aymeric Assier (https://github.com/myeti)",
@@ -9,8 +9,8 @@
     "Julien Martins Da Costa (https://github.com/jdacosta)"
   ],
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/wide/emitter.git"
+    "type": "git",
+    "url": "https://github.com/wide/emitter.git"
   },
   "main": "lib/index.js",
   "engines": {

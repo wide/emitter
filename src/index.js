@@ -17,7 +17,7 @@ const PREFIX = '@'
 export function on(event, fn, opts = {}) {
   const ref = e => fn(...e.detail)
   document.addEventListener(`${PREFIX}${event}`, ref, opts)
-  return ref
+  return { ref, opts }
 }
 
 
@@ -38,8 +38,8 @@ export function emit(event, ...args) {
  * @param {String} event 
  * @param {Function} ref 
  */
-export function off(event, ref) {
-  document.removeEventListener(`${PREFIX}${event}`, ref)
+export function off(event, ref, opts = {}) {
+  document.removeEventListener(`${PREFIX}${event}`, ref, opts)
 }
 
 
